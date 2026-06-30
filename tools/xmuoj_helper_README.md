@@ -1,11 +1,11 @@
 # XMUOJ Helper
 
-This file is kept for users who open the `tools/` directory directly.
+这个文件用于给直接打开 `tools/` 目录的用户做快速说明。
 
-For the complete GitHub-ready documentation, see the repository root
-[`README.md`](../README.md).
+完整的项目介绍、配置项和使用流程请查看仓库根目录的
+[`README.md`](../README.md)。
 
-Quick start:
+快速开始：
 
 ```powershell
 $env:XMUOJ_USERNAME="your_username"
@@ -16,5 +16,5 @@ python tools/xmuoj_helper.py sync
 python tools/xmuoj_helper.py interactive
 ```
 
-`auto` mode is dry-run by default. It only submits generated code when `--submit`
-is explicitly provided.
+`auto` 模式默认是 dry-run：它会调用模型并写入代码文件，但不会提交到 OJ。
+只有显式添加 `--submit` 时，工具才会提交生成的代码。
